@@ -25,7 +25,7 @@ namespace PetStoreFunctions.Tests
         }
 
         [Fact]
-        public async void Get_Pet_Owner_By_Gendder_By_Dog_Type_Should_Return_Cat_Owners()
+        public async void Get_Pet_Owner_By_Gender_And_Cat_Type_Should_Return_Cat_Owners()
         {
          var petOwnerData =  LoadJson(@"PetOwnerData.json");
          var response =   await PetStoreRequestProcessor.GetOwnerByGenderAndByPetType(petOwnerData,"Cat" );
@@ -38,7 +38,7 @@ namespace PetStoreFunctions.Tests
         }
 
         [Fact]
-        public async void Get_Pet_Owner_By_Gendder_By_Dog_Type_Should_Return_Dog_Owners()
+        public async void Get_Pet_Owner_By_Gender_And_Dog_Type_Should_Return_Dog_Owners()
         {
             var petOwnerData = LoadJson(@"PetOwnerData.json");
             var response = await PetStoreRequestProcessor.GetOwnerByGenderAndByPetType(petOwnerData, "Dog");
