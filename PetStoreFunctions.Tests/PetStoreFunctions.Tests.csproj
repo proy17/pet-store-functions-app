@@ -23,5 +23,10 @@
   <ItemGroup>
     <ProjectReference Include="..\PetStoreFunctions\PetStoreFunctions.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="PetStoreUnitTests.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
 
 </Project>
